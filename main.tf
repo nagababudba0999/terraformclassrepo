@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+} 
+
 module "network" {
   source = "git::https://github.com/nagababudba0999/terraformclassrepo.git//Network"
   vpc_cidr = "20.0.0.0/16"
